@@ -670,7 +670,6 @@ static NSString *const kConfigOpenIDRealmKey = @"GIDOpenIDRealm";
     authFlow.error = [self errorWithString:errorString code:errorCode];
   }
 
-  [self addDecodeIdTokenCallback:authFlow];
   [self addSaveAuthCallback:authFlow];
   [self addCompletionCallback:authFlow];
 }
@@ -705,7 +704,6 @@ static NSString *const kConfigOpenIDRealmKey = @"GIDOpenIDRealm";
   GIDAuthFlow *authFlow = [[GIDAuthFlow alloc] init];
   authFlow.authState = authState;
   [self maybeFetchToken:authFlow];
-  [self addDecodeIdTokenCallback:authFlow];
   [self addSaveAuthCallback:authFlow];
   [self addCompletionCallback:authFlow];
 }
