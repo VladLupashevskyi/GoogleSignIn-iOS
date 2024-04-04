@@ -244,7 +244,7 @@ static NSString *const kConfigOpenIDRealmKey = @"GIDOpenIDRealm";
       [GIDSignInInternalOptions defaultOptionsWithConfiguration:_configuration
                                        presentingViewController:presentingViewController
                                                       loginHint:hint
-                                                  addScopesFlow:YES
+                                                  addScopesFlow:NO
                                                      completion:completion];
   [self signInWithOptions:options];
 }
@@ -257,7 +257,7 @@ static NSString *const kConfigOpenIDRealmKey = @"GIDOpenIDRealm";
     [GIDSignInInternalOptions defaultOptionsWithConfiguration:_configuration
                                      presentingViewController:presentingViewController
                                                     loginHint:hint
-                                                addScopesFlow:YES
+                                                addScopesFlow:NO
                                                        scopes:additionalScopes
                                                    completion:completion];
   [self signInWithOptions:options];
@@ -315,7 +315,7 @@ static NSString *const kConfigOpenIDRealmKey = @"GIDOpenIDRealm";
       [GIDSignInInternalOptions defaultOptionsWithConfiguration:_configuration
                                                presentingWindow:presentingWindow
                                                       loginHint:hint
-                                                  addScopesFlow:YES
+                                                  addScopesFlow:NO
                                                      completion:completion];
   [self signInWithOptions:options];
 }
@@ -335,7 +335,7 @@ static NSString *const kConfigOpenIDRealmKey = @"GIDOpenIDRealm";
     [GIDSignInInternalOptions defaultOptionsWithConfiguration:_configuration
                                              presentingWindow:presentingWindow
                                                     loginHint:hint
-                                                addScopesFlow:YES
+                                                addScopesFlow:NO
                                                        scopes:additionalScopes
                                                    completion:completion];
   [self signInWithOptions:options];
